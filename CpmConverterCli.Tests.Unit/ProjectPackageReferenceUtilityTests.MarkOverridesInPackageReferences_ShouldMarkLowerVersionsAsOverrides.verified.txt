@@ -1,0 +1,17 @@
+﻿[
+  {
+    Name: PackageA,
+    Version: 1.0.0,
+    IsOverride: true
+  },
+  {
+    Name: PackageA,
+    Version: 2.0.0,
+    IsOverride: false
+  },
+  {
+    Name: PackageB,
+    Version: 1.0.0,
+    IsOverride: false
+  }
+]
