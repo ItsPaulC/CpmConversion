@@ -20,17 +20,9 @@
         <PackageReference Include="xunit.runner.visualstudio"/>
     </ItemGroup>
 
-    <ItemGroup>
-        <Using Include="Xunit"/>
-    </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\src\CpmConverterCli\CpmConverterCli.csproj"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageVersion Update="Verify" Version="28.8.1"/>
-        <PackageVersion Update="Verify.Xunit" Version="28.8.1"/>
+        <ProjectReference Include="..\..\src\CpmConverterCli\CpmConverterCli.csproj"/>
     </ItemGroup>
 
 </Project>
