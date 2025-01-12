@@ -19,7 +19,7 @@ jobs:
           dotnet-version: '9.x'  # Replace with your .NET version
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore --force-evaluate
 
       - name: Build
         run: dotnet build --no-restore
