@@ -16,10 +16,16 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: '9.x'  # Replace with your .NET version
+          dotnet-version: '9.0.101' # Specify exact .NET version
+
+      - name: Clear NuGet Cache
+        run: dotnet nuget locals all --clear
 
       - name: Restore dependencies
-        run: dotnet restore --force-evaluate
+        run: dotnet restore --use-lock-file
+
+      - name: Clean Solution
+        run: dotnet clean
 
       - name: Build
         run: dotnet build --no-restore
